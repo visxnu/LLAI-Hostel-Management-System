@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Learn Logic AI Hostel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="flex w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="w-1/2 bg-blue-100 flex flex-col items-center justify-center p-12">
+            <img alt="LLAI HOSTEL" class="mb-4" height="300" src="{{ url_for('static', filename='images/logo.png') }}" width="300"/>
+        </div>
+        <div class="w-1/2 p-12">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6 text-center">Register</h2>
+            <form method="POST">
+                <div class="mb-4">
+                    <input type="text" name="phone_number" placeholder="Phone Number (Username)"
+                        class="w-full px-6 py-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" required>
+                </div>
+                <div class="mb-4">
+                    <input type="password" name="password" placeholder="Password"
+                        class="w-full px-6 py-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="name" placeholder="Full Name"
+                        class="w-full px-6 py-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" required>
+                </div>
+                <div class="mb-4">
+                    <input type="text" name="roll_no" placeholder="Roll Number"
+                        class="w-full px-6 py-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-800" required>
+                </div>
+                <button class="w-full px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-teal-600" type="submit">
+                    Register
+                </button>
+            </form>
+            <p class="text-center mt-4 text-gray-700">
+                Already have an account? <a href="{{ url_for('login') }}" class="text-blue-800 hover:underline">Login</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .fade-in-text {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+</style>
+</html>

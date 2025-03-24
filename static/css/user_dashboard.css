@@ -1,0 +1,38 @@
+body {
+    background-color: #e9ecef;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.card-body strong {
+    color: #343a40;
+}
