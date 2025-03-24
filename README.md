@@ -26,7 +26,7 @@ Ensure you have Python installed on your system (Python 3.7 or later).
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/visxnu/LLAI-Hostel-Management-System.git
 cd LLAI-Hostel-Management-System
 ```
 
