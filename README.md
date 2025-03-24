@@ -83,6 +83,5 @@ This project is licensed under the MIT License.
 ## Contact
 For any inquiries, please reach out to the project owner.
 
----
-Developed by **Vishnu**
+
 
